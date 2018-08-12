@@ -15,6 +15,6 @@ if ! which k2pdfopt > /dev/null; then
     exit 1
 fi
 
-k2pdfopt -col 1 -fc- -w 1072 -h 1448 -dpi 300 -idpi -2 -ui- -title "$TITLE" -author "$AUTHOR" -o $OUTFILE $PDF
+k2pdfopt -col 1 -fc- -w 1072 -h 1448 -dpi 300 -idpi -2 -ui- -title "$TITLE" -author "$AUTHOR" -x -o $OUTFILE $PDF
 
 exit $?
