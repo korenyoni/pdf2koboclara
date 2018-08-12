@@ -17,4 +17,4 @@ fi
 
 k2pdfopt -col 1 -fc- -w 1072 -h 1448 -dpi 300 -idpi -2 -ui- -title $2 -author $3 -o $2 $1
 
-exit 0
+exit $?
